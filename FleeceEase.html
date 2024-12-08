@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FleeceEase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="FleeceEase_style.css">
+    <!-- <link rel="stylesheet" href="FleeceEase_mobie_style.css" media="only screen and (max-width:768px)"> -->
+</head>
+<body>
+    <script>
+        function resetHtmlFont(){
+            document.documentElement.style.fontSize=screen.width/20+'px';
+            // 
+        }
+        resetHtmlFont();
+        window.onreset=resetHtmlFont;
+    </script>
+    <header>
+        <div class="header">
+            
+            <img src="logo.svg" alt="logo" width="100%">
+
+            <nav>
+                <li><a href="http://www.zd-industrial.com/index.php/about.html">contact us</a></li>
+            </nav>
+        </div>
+    </header>
+    <body>
+        <main>
+            <div id="welcome_page" class="section">
+                <div class="conponent">
+                    <h1>Welcome to FleeceEase factory.</h1>
+                    <div class="idea">
+                    
+                    <!-- welcome——page模块这里插入背景图？视频？ -->
+                    
+                    <p style="font-family:Katibeh;font-size: .5rem;">More stable supply, higher efficiency, and better quality.</p>
+                    <p>供应稳定，更高效，更高质。</p>   
+                </div>
+                </div>
+                
+            </div>
+
+            <div id="aboutus_page" class="section">
+                <!-- 有个灵感：可以做大事年表？大事月表 -->
+                <h1>About us</h1>
+                <p class="introduce">
+                    We are a company specialized in the production of knitted wool garments,located in Dongguan,a manufacturing hub in China. We are commiteed to providing high-quality knitted wool products to customers worldwide,covering a wide range of fashion apparel,homegoods,and more. With advanced production equipment and a skilled technical team,we are capable of customizing various styles and designs to meet both small-batch and large-scale production demands.We strictly control every step of the process to ensure that our products meet the clients' standaeds.We look forward to collaborating with you to create a brighter future togeter.
+                </p>
+            </div>
+
+            <div id="discribition_page" class="section">
+                <section class="good_yarn">
+                    <!-- 纱线图片背景 -->
+                    
+                    <p class="introduce">good_yarn</p>
+                    <p style="font-size: .1rem; color: aliceblue;">毛线</p>
+
+                </section>
+                <section class="good_knitting">
+                    <p class="introduce" id="kint_text">good_knitting_process</p>
+                    <p style="font-size: .1rem;color: aliceblue;">编织工艺</p>
+
+                </section>
+                <section class="idea_detail_text">
+                    <p class="introduce">A vast and stable market supply, higher efficiency, reliable raw material supply, and high-end knitting technology that can be practiced at will.
+Excellent quality is synonymous with us.</p>
+                    <p style="font-size: .1rem;width: 80%;">广大稳定的市场供应，更高的效率，来源可靠的原材料供应，随心可实践的高端针织工艺。
+优良的品质是我们的代名词。</p>
+                </section>
+                <section class="good_product">
+                    <p  class="introduce">good_product</p>
+                    <p style="font-size: .1rem;">产品</p>
+
+                </section>
+            </div>
+
+ <!-- 纱线页面            -->
+            <div id="yarn_page" class="section">
+                <h1>good yarn</h1>
+                <p   class="introduce">High quality fibers, soft and comfortable, available in various colors and sizes to meet different weaving needs.</p>
+                <p style="font-size: .1rem;margin-bottom: 10px;">优质纤维，柔软舒适，多种颜色和规模可选，满足不同编织需求。</p>
+                <video src="./cutting_video.mp4" height="80%" controls autoplay>毛线市场视频</video>
+            </div>
+
+
+<!-- 工艺页面    -->
+            <div id="knitting_page" class="section">
+                <h1>good knitting process</h1>
+                <div class="k_box">
+                    <div class="k_item_tall">
+                        <!-- <img src="maoyi.jpeg" alt="design sketch 效果图"  class="pic"> -->
+                    </div>
+                    <div class="k_item_large">
+                        <!-- <img src="maoxian.jpeg" alt="Detail drawing 工艺细节图" class="pic" > -->
+                    </div>
+                    <div class="k_item">
+                        <!-- <img src="machine.jpeg" alt="Process diagram 机器制作图" class="pic"> -->
+                    </div>
+                    <div class="k_item_text" style="text-align: center;">  
+                        <!-- <p class="introduce">Strict material selection, fine cutting, precise sewing, striving for both comfort and durability. Combining manual and machine sewing, rigorously inspecting every detail to meet customer needs.</p>
+                        <p style="font-size: .1rem;margin-bottom: 10px;">严格选材，精细裁剪，精准缝制，力求舒适与耐用兼具。手工和机缝相结合，严格检验每个细节，以满足客户需求。</p> -->
+                    </div>
+                                
+                 
+            </div></div>
+
+<!-- 产品页面     -->
+            <div id="product_page" class="section">
+                <h1>good product</h1>
+                <div class="product_box">
+                    <div class="gallery">
+                        <img src="maoyi5.png" alt="pic01" class="rendering">
+                        <img src="maoyi2.jpeg" alt="pic02" class="rendering">
+                        <img src="maoyi3.jpeg" alt="pic03" class="rendering">
+                        <img src="maoyi1.jpeg" alt="pic04" class="rendering">
+                        <img src="maoyi4.png" alt="pic05" class="rendering">
+    
+                    </div>
+                    <div class="product_info">
+                        <p   class="introduce">Fashion</p>
+                        <p  class="introduce">these are part of our products.</p>
+    
+                    </div>
+                </div>
+                
+            </div>
+
+<!-- 联系我们页面    -->
+            <div class="contact_page">
+                <div class="contact_box">
+                    
+                        <h1>contact us</h1>
+                        <p style="font-size: .1rem;margin-bottom: 10px;">联系我们</p>
+                    <section class="contact_info">
+                        <div>
+                            <p class="introduce">ADD</p>
+                            <p style="font-size: .1rem;margin-bottom: 10px;">这是地址</p>
+                        </div>
+                        <div>
+                            <p class="introduce">Email</p>
+                            <p style="font-size: .1rem;margin-bottom: 10px;">这是邮件</p>
+                        </div>
+                        <div>
+                            <p class="introduce">phone</p>
+                            <p style="font-size: .1rem;margin-bottom: 10px;">这是电话</p>
+                        </div>
+                    
+                    </section>
+                    
+
+                    </div>
+                    
+                    <img src="map.png" alt="map 地图" width="50%">
+                        
+            </div>
+                
+        </main>
+    </body>
+    <footer></footer>
+</body>
+</html>

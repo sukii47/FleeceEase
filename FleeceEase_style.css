@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid gray;
+}
+body,html{
+    /* font-size: 62.5%; */
+    height: 100%;
+    overflow:auto;
+    background-color: #e6dfd3;
+    
+}
+header{
+    position: fixed;
+    width: 25%;
+    height: 20%;
+    font-size: large;
+    z-index: 2;
+    margin: 3%;
+    font-family: Katibeh,sans-serif;
+    /* background-color: #D7D1C7; */
+    
+}
+h1{
+    font-size: 1rem;   
+    text-align: center;
+    font-family: Anton,sans-serif;
+    color: #74404d;
+}
+.idea{
+    font-size: 18px;
+    justify-content: center;
+    text-align: center;
+    color: #405c74;
+}
+
+
+
+
+.section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    font-family:sans-serif;
+    /* background-color: #e2e2e4; */
+    position: relative;
+    z-index: 1;
+    /* background-color: aliceblue; */
+     
+}
+
+#discribition_page{
+    width: 85%;
+    height: 95vh;
+    display: flex;
+    align-self: center;
+    align-content:center;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    
+
+}
+
+
+.good_yarn{
+    height: 40%;
+    width: 45%;
+    background-image: url(maoxian1.jpeg);
+    background-size: cover;
+    margin-left: 5px;
+}
+.good_knitting{
+    height: 40%;
+    width: 35%;
+    background-image: url(mashine.jpeg);
+    background-size: cover;
+}
+.good_product{
+    height: 40%;
+    width: 50%;
+    background-image: url(maoyi.jpeg);
+    background-size: cover;
+}
+.idea_detail_text{
+    width: 30%;
+    height: 40%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#welcome_page::before{
+     content: ''; /* 必须设置内容 */
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('woman_checking.jpeg'); /* 设置背景图片 */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0.3; /* 设置背景图片的透明度 */
+      z-index: -1; /* 确保背景位于内容下方 */
+    
+
+}
+.introduce{
+    font-size: .3rem;
+    width: 80%;
+    font-family: Katibeh;
+    margin-top: 8px;
+    text-align:start;
+    /* justify-content: center; */
+}
+.introduce[id="kint_text"]{
+    color: aliceblue;
+}
+
+
+
+.k_box{
+    width: 80%;
+    height: 75vh;
+    margin-top: .5rem;
+    display: grid;
+    /* 三列 */
+    grid-template-columns: repeat(3,1fr);
+    /* 两行 */
+    grid-template-rows: repeat(2,1fr);
+    gap: .625rem;
+
+}
+@media (max-width:768px) {
+    .k_box{
+        /* 两列 */
+        grid-template-columns: repeat(2,1fr);
+        /* 三行 */
+         grid-template-rows: repeat(3,1fr);
+    }
+    .k_item_large{
+            /* 占2列1行 */
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .k_item_tall{
+        /* 占1列2行 */
+        grid-column: 1;
+        grid-row: span 2;
+        
+    }
+    .k_item{
+        /* padding:.625rem; */
+        grid-column: 2/4;
+        grid-row: 2;
+        
+    }
+    .k_item_text{
+        /* 占1列2行 */
+    grid-row: 3/4;
+    grid-column: 1/-1;
+    }
+
+
+}
+.k_item{
+    /* padding:.625rem; */
+    grid-column: 2;
+    grid-row: 2;
+    
+}
+.k_item_tall{
+    /* 占1列2行 */
+    grid-column: span 1;
+    grid-row: span 2;
+    
+}
+.k_item_large{
+    /* 1列1行 */
+    grid-column: 2/4;
+    grid-row: 1;
+  
+}
+
+.k_item_text{
+    /* 1列1行 */
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.pic{
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: fit-content;
+}
+
+
+
+.product_box{
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 80%;
+}
+.product_info{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 30%;
+
+}
+.gallery{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 15px;
+    height: 80vh;
+    width: 70%;
+}
+.rendering{
+    /* 效果图 */
+    width: 400px;
+    height: 600px;
+    flex-shrink:initial; /*图片不发生形变*/
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+
+
+.contact_page{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+
+}
+.contact_box{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    padding: 10%;
+    gap: 20px;
+}
+.contact_info{
+    padding: 20px,0;
+}
+
+.pic{
+    width: 100%;
+    height: 45%;
+    overflow: hidden;
+    padding: 0;
+    
+}
